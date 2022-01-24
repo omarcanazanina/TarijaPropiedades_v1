@@ -1,0 +1,16 @@
+a.nav-link{
+    display: flex !important;
+}
+@media (max-width: 991px){
+
+    .off-canvas-sidebar .navbar .container {
+        direction: rtl !important;
+    }
+}
+.logo-p{
+    transform: scale(2);
+    border-radius: 50%;
+}
+div.page-header{
+    background-color: #eeeeee;
+}

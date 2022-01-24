@@ -1,11 +1,54 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="/">EJS is Fun</a>
-  <ul class="navbar-nav mr-auto">
-    <li class="nav-item">
-      <a class="nav-link" href="/">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/about">About</a>
-    </li>
-  </ul>
+<nav class="navbar navbar-expand-lg bg-primary navbar-absolute fixed-top text-white">
+  <div class="container">
+    <div class=" ">
+      <a href="/">
+        <img class="img w-25 logo-p" src="http://localhost:3000/static/img/logo.jpg" alt="Third slide" >
+      </a>
+      
+  </div>
+    <!-- 
+
+      <div class="navbar-wrapper">
+        <a class="navbar-brand" href="javascript:;"><%= namepage %></a>
+      </div>
+    -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="navbar-toggler-icon icon-bar"></span>
+      <span class="navbar-toggler-icon icon-bar"></span>
+      <span class="navbar-toggler-icon icon-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item ">
+          <a href="/" class="nav-link">
+            Nosotros
+          </a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="javascript:;" role="button" aria-haspopup="true" aria-expanded="false">Proyectos</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="/maps">Mapas</a>
+          </div>
+        </li>
+
+        <li class="nav-item ">
+          <a href="/" class="nav-link">
+            Contacto
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a href="/auth/register" class="nav-link">
+            Register
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a href="/auth" class="nav-link">
+            Login
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
 </nav>

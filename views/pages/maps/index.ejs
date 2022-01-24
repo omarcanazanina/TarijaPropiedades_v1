@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../../partials/head'); %>
+</head>
+<body class="off-canvas-sidebar" >
+
+    <header>
+        <%- include('../../partials/header',{namepage:'Login'}); %>
+    </header>
+
+    <main>
+        
+        <div class="wrapper wrapper-full-page">
+            <div class=" " >
+                <div class="content page-header"  >
+                    <div class="container-fluid">
+                      <div class=" text-center">
+                        <h3 class="title" >World Map</h3>
+
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="card card-plain">
+                            <div class="card-body ">
+                              <div id="worldMap" class="map map-big"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              <footer class="footer">
+                <%- include('../../partials/footer'); %>
+              </footer>
+            </div>
+        </div>
+
+    </main>
+    <script src="http://localhost:3000/static/js/plugins/jquery-jvectormap.js"></script>
+    <script>
+        $(document).ready(function() {
+          md.initVectorMap();
+        });
+      </script>
+</body>
+</html>
